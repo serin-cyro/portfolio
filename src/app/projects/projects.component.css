@@ -1,0 +1,17 @@
+.projects h1 {
+    font-size: 7rem;
+    color: white;
+}
+
+.projects .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondHeading {
+    color: rgba(182, 180, 189, 0.2);
+}
+
+.description {
+    color: #998f8f;
+}
