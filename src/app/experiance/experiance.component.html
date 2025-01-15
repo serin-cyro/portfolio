@@ -1,0 +1,18 @@
+<div class="projects">
+    <h1><span>3 YEARS OF </span><br/>
+      <span class="secondHeading">EXPERIANCE</span></h1>    
+  </div>
+  
+  <div class="experience">
+    <mat-card class="card" *ngFor="let job of jobs">
+      <mat-card-content>
+        <h3>{{ job.company }}</h3>
+        <p class="description">{{ job.description }}</p>
+        <span class="date">{{ job.dates }}</span>
+      </mat-card-content>
+      <div class="arrow">
+        <mat-icon>arrow_forward</mat-icon>
+      </div>
+    </mat-card>
+  </div>
+  
