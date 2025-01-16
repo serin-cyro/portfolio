@@ -29,11 +29,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: #151312;
     color: white;
     padding: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .card 
   
   mat-card-content {
     max-width: 80%;
@@ -58,6 +61,21 @@
   
   .arrow {
     font-size: 24px;
-    color: #f9a825; /* Arrow color */
+    color: #f9a825;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    transition: transform 0.3s ease;
   }
   
+  .card:hover {
+    transform: scale(1.05); /* Scales the card slightly to make it pop */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Adds a shadow for depth */
+    background-color: #241f1d;
+  }
+
+  .card:hover .arrow {
+    transform: translateX(15px); 
+    transform: translateY(-10px);
+  }
+
